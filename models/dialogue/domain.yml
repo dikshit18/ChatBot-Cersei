@@ -1,0 +1,67 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_goodbye
+- utter_ask_location
+- action_weather
+- action_calculate_age
+- utter_name
+- utter_intro
+- utter_bio
+- utter_skills
+actions:
+- utter_greet
+- utter_goodbye
+- utter_ask_location
+- actions.ActionWeather
+- actions.Age
+- utter_name
+- utter_intro
+- utter_bio
+- utter_skills
+config:
+  store_entities_as_slots: true
+entities:
+- location
+intents:
+- greet
+- goodbye
+- inform
+- currentage
+- name
+- intro
+- bio
+- skills
+slots:
+  age:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  location:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_location:
+  - text: In what location?
+  utter_bio:
+  - text: Dikshit,is a Software Engineer at Grazitti Interactive. He is an AI enthusiast(reason
+      he created me).He codes in C#.
+  - text: Dikshit, is a full time Software Engineer at Grazitti Interactive and codes
+      in C#. He is an AI enthusiast.
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye bye :(
+  utter_greet:
+  - text: Hello! How can I help?
+  utter_intro:
+  - text: I am Cersei, a lil  bot created by Dikshit. I can answer some very basic
+      questions about him.
+  - text: I am Cersei, a lil bot created by Dikshit. You can ask some very basic things
+      about him.
+  utter_name:
+  - text: My name is Cersei.
+  - text: My bot friends call me Cersei.
+  - text: I am known by the name Cersei.
+  utter_skills:
+  - text: Dikshit posses a beginner level knowledge in c#,Python. He is a bit familiar
+      to AWS and posses a inclined interest towards Machine Learning and Deep Learning.
+topics: []

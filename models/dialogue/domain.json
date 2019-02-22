@@ -1,0 +1,26 @@
+{
+  "features": [
+    "intent_greet",
+    "intent_goodbye",
+    "intent_inform",
+    "intent_currentage",
+    "intent_name",
+    "intent_intro",
+    "intent_bio",
+    "intent_skills",
+    "entity_location",
+    "slot_age_0",
+    "slot_location_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_utter_greet",
+    "prev_utter_goodbye",
+    "prev_utter_ask_location",
+    "prev_action_weather",
+    "prev_action_calculate_age",
+    "prev_utter_name",
+    "prev_utter_intro",
+    "prev_utter_bio",
+    "prev_utter_skills"
+  ]
+}

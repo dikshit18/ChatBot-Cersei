@@ -1,0 +1,53 @@
+slots:
+  location:
+    type: text
+  age:
+    type: text
+
+
+intents:
+ - greet
+ - goodbye
+ - inform
+ - currentage
+ - name
+ - intro
+ - bio
+ - skills
+
+
+entities:
+ - location
+
+templates:
+  utter_greet:
+    - 'Hello! How can I help?'
+  utter_goodbye:
+    - 'Talk to you later.'
+    - 'Bye bye :('
+  utter_ask_location:
+    - 'In what location?'
+  utter_name:
+    - 'My name is Cersei.'
+    - 'My bot friends call me Cersei.' 
+    - 'I am known by the name Cersei.'    
+  utter_intro:
+    - I am Cersei, a lil  bot created by Dikshit. I can answer some very basic questions about him.
+    - I am Cersei, a lil bot created by Dikshit. You can ask some very basic things about him.
+  utter_bio:
+    - Dikshit,is a Software Engineer at Grazitti Interactive. He is an AI enthusiast(reason he created me).He codes in C#.
+    - Dikshit, is a full time Software Engineer at Grazitti Interactive and codes in C#. He is an AI enthusiast.
+  utter_skills:
+    - Dikshit posses a beginner level knowledge in c#,Python. He is a bit familiar to AWS and posses a inclined interest towards Machine Learning and Deep Learning.
+    
+
+actions:
+ - utter_greet
+ - utter_goodbye
+ - utter_ask_location
+ - actions.ActionWeather
+ - actions.Age
+ - utter_name
+ - utter_intro
+ - utter_bio
+ - utter_skills
