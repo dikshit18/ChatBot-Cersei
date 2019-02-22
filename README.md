@@ -16,3 +16,5 @@ run_app.py -- > Converts RASA bot into API using FLASK.
 weather_domain.yml --> Contains slots,intents,actions,entities,tenplates
 
 After training , a demo conversation with my chatbot: 
+![capture](https://user-images.githubusercontent.com/29276515/53254986-a29dab80-36ea-11e9-95f3-f9ac4179c1f5.PNG)
+
